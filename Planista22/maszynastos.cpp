@@ -8,7 +8,7 @@ using namespace std;
 struct osoba {
 
 	int wiek;
-	osoba *nastepna;    // wskaŸnik na nastêpny element
+	osoba *nastepna;    // wskaÅºnik na nastÄ™pny element
 	osoba();            // konstruktor
 };
 
@@ -18,13 +18,13 @@ osoba::osoba() {
 
 
 struct lista {
-	osoba *pierwsza;  // wskaŸnik na pocz¹tek listy 
+	osoba *pierwsza;  // wskaÅºnik na poczÄ…tek listy 
 	void dodaj_osobe(int wiek);
 	void usun_osobe(int nr);
 	void wyswietl_liste();
 	void zamien_liczby(int nr);
 	void suma();
-	lista(); // lista nie zwraca ¿adnych argumentów, przechowuje tylko dane. AB
+	lista(); // lista nie zwraca Å¼adnych argumentÃ³w, przechowuje tylko dane. AB
 };
 
 
@@ -68,7 +68,7 @@ void lista::dodaj_osobe(int wiek)
 {
 	osoba *nowa = new osoba;    // tworzy nowy element listy
 
-								// wype³niamy naszymi danymi
+								// wypeÅ‚niamy naszymi danymi
 
 	nowa->wiek = wiek;
 	nowa->nastepna = pierwsza;
@@ -83,7 +83,7 @@ void lista::zamien_liczby(int nr)
 	{
 		return;
 	}
-	osoba *wskaznik = pierwsza;    // wskaŸnik na nastêpny element
+	osoba *wskaznik = pierwsza;    // wskaÅºnik na nastÄ™pny element
 	osoba *druga = pierwsza->nastepna;
 	//int nrpierwszej = pierwsza->wiek;
 
